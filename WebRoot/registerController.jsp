@@ -21,9 +21,4 @@
 		//注册失败  就返回注册页面
 		response.sendRedirect("register.jsp");
 	}
-
-
-
-
-
 %>

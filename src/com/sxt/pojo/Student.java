@@ -6,6 +6,11 @@ package com.sxt.pojo;
  * @date: 2020年2月7日 下午3:00:34
  */
 public class Student {
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", stNo=" + stNo + ", name=" + name + ", sex=" + sex + ", age=" + age + ", score="
+				+ score + "]";
+	}
 	/**
 	 * 	学生ID
 	 */

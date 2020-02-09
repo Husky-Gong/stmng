@@ -38,6 +38,7 @@ public class StudentDao extends BaseDao {
 	 */
 	public Student insert(Student st) {
 		String sql = "insert into student value(0,?,?,?,?,?)";
+		System.out.println(st);
 		int id = super.insert(sql, st.getStNo(),st.getName(),st.getSex(),st.getAge(),st.getScore());
 		if(id == 0) {
 			System.out.println("学生添加失败:系统错误");
@@ -82,6 +83,15 @@ public class StudentDao extends BaseDao {
 		
 	}
 	
+	public Student insertStu(Student stu) {
+		String sql = "insert into student value(0,?,?,?,?,?)";
+		int stuId = super.insert(sql, stu.getStNo(),stu.getName(),stu.getSex(),stu.getAge(),stu.getScore());
+		if(stuId == 0) {
+			return null;
+		}
+		stu.setId(stuId);
+		return stu;
+	}
 	
 	public static void main(String[] args) {
 		//map  什么条件都没有

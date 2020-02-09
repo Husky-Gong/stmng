@@ -44,6 +44,7 @@ public class BaseDao {
 			}
 			prep.executeUpdate();
 			//获取生成主键值
+			//在JAVA中查询刚插入的记录ID 利用JDBC的getGeneratedKeys获得INSERT插入后生成的主键ID
 			rs = prep.getGeneratedKeys();
 			//偏移结果集的指针
 			rs.next();
