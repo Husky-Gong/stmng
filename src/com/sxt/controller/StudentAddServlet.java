@@ -38,7 +38,7 @@ public class StudentAddServlet extends HttpServlet{
 		System.out.println(flag);
 		if(flag){
 			// Register successfully
-			resp.sendRedirect("studentListController.jsp");
+			resp.sendRedirect("http://127.0.0.1:8080/stmng-web/studentList.do");
 		}
 		else{
 			//Register failed
