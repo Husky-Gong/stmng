@@ -12,7 +12,7 @@
 <title>新增学生</title>
 </head>
 <body>
-<form action="studentAddController.jsp" method="post">
+<form action="studentAdd.do" method="post">
 	<p>学号:<input type="text" name="st_no"/></p>
 	<p>姓名:<input type="text" name="name"/></p>
 	<p>性别:<input type="text" name="sex"/></p>

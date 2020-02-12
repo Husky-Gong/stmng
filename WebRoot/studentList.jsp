@@ -9,7 +9,7 @@
 <title>学生列表</title>
 </head>
 <body>
-<form action="studentListController.jsp">
+<form action="studentList.do">
 	<p>学生名称:<input type="text" name="name" /><input type="submit"  value="查询" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="studentAdd.jsp">添加学生</a></p>
 </form>
 <hr>
